@@ -32,11 +32,63 @@
     </header>
 
     <main>
-        <section>
-            <h2>Giới thiệu</h2>
-            <p>Chào mừng đến với Công ty Chứng khoán Mẫu. Chúng tôi cung cấp các dịch vụ chứng khoán như Margin, Chứng chỉ quỹ, Phái sinh.</p>
+        <!-- Section Giới thiệu công ty -->
+        <section id="intro-company">
+            <h2>Giới thiệu Công ty</h2>
+            <p>Công ty Chứng khoán Mẫu được thành lập năm 2010, với sứ mệnh mang đến các giải pháp đầu tư an toàn và hiệu quả cho khách hàng. Chúng tôi có hơn 10 năm kinh nghiệm trong lĩnh vực chứng khoán, với đội ngũ chuyên gia giàu kinh nghiệm.</p>
+            <p>Lịch sử: Bắt đầu từ một công ty nhỏ tại Hà Nội, nay đã mở rộng ra toàn quốc. Sứ mệnh: Giúp khách hàng đạt được mục tiêu tài chính qua các sản phẩm đa dạng.</p>
+            <button id="newsletter-btn">Đăng ký nhận tin tức (Test Click)</button>
+        </section>
+
+        <!-- Section Giới thiệu sản phẩm -->
+        <section id="intro-products">
+            <h2>Giới thiệu Sản phẩm</h2>
+            <div class="product-item">
+                <h3>Margin</h3>
+                <p>Margin cho phép bạn vay tiền từ công ty để đầu tư, tăng lợi nhuận tiềm năng.</p>
+                <button class="toggle-details" data-target="margin-details">Tìm hiểu thêm (Test Click)</button>
+                <div id="margin-details" class="details" style="display: none;">
+                    <p>Chi tiết: Tỷ lệ vay lên đến 50%, lãi suất cạnh tranh. Lợi ích: Tăng vốn đầu tư mà không cần vốn lớn.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <h3>Chứng chỉ quỹ</h3>
+                <p>Đầu tư vào quỹ mở với đa dạng lựa chọn, từ cổ phiếu đến trái phiếu.</p>
+                <button class="toggle-details" data-target="fund-details">Tìm hiểu thêm (Test Click)</button>
+                <div id="fund-details" class="details" style="display: none;">
+                    <p>Chi tiết: Quỹ ETF, quỹ tương hỗ. Lợi ích: Đa dạng hóa rủi ro, quản lý chuyên nghiệp.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <h3>Phái sinh</h3>
+                <p>Giao dịch hợp đồng tương lai, quyền chọn để bảo vệ hoặc đầu cơ.</p>
+                <button class="toggle-details" data-target="derivatives-details">Tìm hiểu thêm (Test Click)</button>
+                <div id="derivatives-details" class="details" style="display: none;">
+                    <p>Chi tiết: Hợp đồng chỉ số VN30, hàng hóa. Lợi ích: Linh hoạt, đòn bẩy cao.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section FAQ dài để test scroll -->
+        <section id="faq">
+            <h2>Câu hỏi thường gặp (Test Scroll)</h2>
+            <p>Nội dung dài để scroll: Câu hỏi 1: Làm thế nào để mở tài khoản? Trả lời: Truy cập trang mở tài khoản và điền form.</p>
+            <p>Câu hỏi 2: Margin là gì? Trả lời: Là hình thức vay margin để đầu tư.</p>
+            <!-- Thêm nội dung dài để scroll -->
+            <p>Thêm nội dung: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Thêm nữa: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <!-- Điểm mốc để track scroll (ví dụ: khi scroll đến đây, push event) -->
+            <div id="scroll-marker" style="height: 1px;"></div>
         </section>
     </main>
+
+    <!-- Modal giả lập cho newsletter (test click) -->
+    <div id="modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 1px solid black;">
+        <h3>Đăng ký Newsletter</h3>
+        <p>Nhập email: <input type="email" id="newsletter-email"></p>
+        <button id="close-modal">Đóng</button>
+    </div>
 
     <footer>
         <p>&copy; 2026 Công ty Chứng khoán Mẫu. Tất cả quyền được bảo lưu.</p>
