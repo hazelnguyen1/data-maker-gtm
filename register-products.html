@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký sản phẩm - Công ty Chứng khoán Mẫu</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Thêm GTM tương tự -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header>
+        <h1>Đăng ký sản phẩm</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="open-account.html">Mở tài khoản</a></li>
+                <li><a href="register-products.html">Đăng ký sản phẩm</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Chọn sản phẩm</h2>
+            <form id="registerProductsForm">
+                <input type="checkbox" id="margin" value="Margin">
+                <label for="margin">Margin</label><br>
+                
+                <input type="checkbox" id="fund-cert" value="Chứng chỉ quỹ">
+                <label for="fund-cert">Chứng chỉ quỹ</label><br>
+                
+                <input type="checkbox" id="derivatives" value="Phái sinh">
+                <label for="derivatives">Phái sinh</label><br><br>
+                
+                <button type="submit">Đăng ký</button>
+            </form>
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Công ty Chứng khoán Mẫu.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
