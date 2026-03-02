@@ -1,0 +1,62 @@
+<!-- mua-hang.html (Trang mới cho "Mua hàng" - giả lập mua sản phẩm chứng khoán, tích hợp với nav) -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mua Hàng - Công ty Chứng khoán Mẫu</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Tag Manager (giữ nguyên như index.html) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P86G4562');</script>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P86G4562"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header>
+        <h1>Công ty Chứng khoán Mẫu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="open-account.html">Mở tài khoản</a></li>
+                <li><a href="register-products.html">Đăng ký sản phẩm</a></li>
+                <li><a href="mua-hang.html">Mua hàng</a></li> <!-- Link mới cho trang này -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mua-hang">
+            <h2>Mua Sản Phẩm Chứng Khoán</h2>
+            <p>Chọn sản phẩm để mua (giả lập - không xử lý thanh toán thực tế).</p>
+            <form id="purchaseForm">
+                <label>
+                    <input type="radio" name="product" value="Margin" required> Margin (Giá: 1.000.000 VNĐ)
+                </label>
+                <label>
+                    <input type="radio" name="product" value="Chứng chỉ quỹ"> Chứng chỉ quỹ (Giá: 500.000 VNĐ)
+                </label>
+                <label>
+                    <input type="radio" name="product" value="Phái sinh"> Phái sinh (Giá: 2.000.000 VNĐ)
+                </label>
+                
+                <label for="quantity">Số lượng:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                
+                <button type="submit">Mua Ngay</button>
+            </form>
+            <p id="purchase-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Công ty Chứng khoán Mẫu. Tất cả quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

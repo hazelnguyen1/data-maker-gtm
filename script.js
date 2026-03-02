@@ -65,3 +65,17 @@ if (registerProductsForm) {
         dataLayer.push({'event': 'register_product', 'products': selected});
     });
 }
+
+// Xử lý form mua hàng (test submit)
+const purchaseForm = document.getElementById('purchaseForm');
+if (purchaseForm) {
+    purchaseForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const product = document.querySelector('input[name="product"]:checked').value;
+        const quantity = document.getElementById('quantity').value;
+        document.getElementById('purchase-message').textContent = `Đã mua ${quantity} x ${product} (giả lập)!`;
+        // Push event cho GTM
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({'event': 'purchase_product', 'product': product, 'quantity': quantity});
+    });
+}
